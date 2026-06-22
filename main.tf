@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "one" {
-  count                  = 5
+  count                  = 3
   ami                    = "ami-0c78ef10ebf8c08db"
   instance_type          = "c7i-flex.large"
   key_name               = "jenkins-server"
